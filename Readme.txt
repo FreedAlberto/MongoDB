@@ -122,6 +122,6 @@ Evitare le join
 
 Relazioni
 Abbiamo la possibilità di salvare la relazione come Embedded Document, oppure come reference
-Embedded Document: con una sola query ho tutti i dati. Ma ho duplicazione, e se cambio qualcosa relativo al documento Embedded, potrei doverli cercare tutti e aggiornarli
-Reference: mi servono più query per ottenere il documento finale, ma non ho ridondanza di dati
+Embedded Document: con una sola query ho tutti i dati. Ma ho duplicazione, e se cambio qualcosa relativo al documento Embedded, potrei doverli cercare tutti e aggiornarli. Però on è detto che debba cambiare i documenti embedded, pootrebbe darsi che se annche il masterdata del documneto embedded cambia, io mi volgia tenere la vecchia versione. A quel punto la modalità embed è da preferire 
+Reference: si implementa usando gli ObjectId dellec collection slave nella collection master. Lo svantaggio è che mi servono più query per ottenere il documento finale, ma non ho ridondanza di dati
 
